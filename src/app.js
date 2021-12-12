@@ -14,7 +14,7 @@ const client = new MongoClient(url);
 const dbName = "crypto-price-history";
 
 // Interval (15 minutes)
-const time = 60 * 1000 * 1;
+const time = 60 * 1000 * 15;
 
 const insertStuff = async (collection, stuff) =>
   await collection.insertMany(stuff);
